@@ -59,7 +59,7 @@ namespace FileInfo
                 // Checks if file is empty
                 try
                 {
-                    if (lines.Count()==0)
+                    if (lines.Length==0)
                     {
                         throw new Exception("\nThe file is empty.");
                     }
