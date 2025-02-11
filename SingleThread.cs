@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 
 
-
 namespace BinaryData
 {
     class SingleThread
@@ -45,6 +44,8 @@ namespace BinaryData
             using (FileStream fs = new FileStream(filename, FileMode.Create, FileAccess.Write))
             {
                 byte[] dataBlock = new byte[BlockSize]; // 50KB block
+
+                // Outer loop indicates how many blocks of 50KB buffer will be placed in file
                 for (int i = 0; i < FileSize / BlockSize; i++)
                 {
                     // Fills the block with alternating 0s and 1s (binary data)
