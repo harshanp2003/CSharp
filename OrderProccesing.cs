@@ -17,11 +17,11 @@ namespace Orders
             Console.Write("Hello User, Please enter the Order Name : ");
             orderName = Console.ReadLine();
 
-            //var processing = ProcessingOrder();
-            //await Task.WhenAll(processing);
             await ProcessingOrder();
+            
             // Displaying the order status as ready
             Console.WriteLine($"Order for {orderName} is ready");
+            
         }
 
         // Asynchronous Method which Processes the Order for 3 seconds
