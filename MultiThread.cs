@@ -1,10 +1,9 @@
-﻿//program to write 10MB of data to multiple files using Multithread
+﻿//Program to write 10MB of data to multiple files using Multithread
 
 using System;
 using System.IO;
 using System.Threading.Tasks;
 using System.Diagnostics;
-
 
 
 namespace BinaryData
