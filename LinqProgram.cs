@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Programs
 {
-    class Program2
+    class LinqProgram
     {
         // Storing the numbers in the list l
         public static  List<int> l=new();
@@ -41,7 +41,7 @@ namespace Programs
             }
 
 
-            // Query two
+            // Query two sorts the number in ascending order
             l.Sort();
             Console.WriteLine("\n\nQuery two results ");
             Console.Write("Sorted Numbers are : ");
@@ -52,7 +52,7 @@ namespace Programs
 
 
 
-            // Query three
+            // Query three using lambda Function to compute square of each number
             var squaredNumbers = l.Select(x=> x * x);
             Console.WriteLine("\n\nQuery three results");
             Console.WriteLine("Square of the numbers are : ");
