@@ -1,6 +1,5 @@
 ﻿// Program that allows the user to store student records using a dictionary
 
-
 using System;
 using System.Collections.Generic;
 
@@ -8,6 +7,7 @@ namespace Records
 {
     class StudentRecord
     {
+        
         public static void Main(String[] args)
         {
             // map is a dictionary variable which holds the students record
@@ -41,7 +41,6 @@ namespace Records
         // Adds the new student information to the record
         public static void AddStudent(Dictionary<int, String> map)
         {
-            
             while(true)
             {
                 Console.Write("Enter the student Id: ");
@@ -59,7 +58,6 @@ namespace Records
                     break;
                 }
             }
-            
         }
 
 
